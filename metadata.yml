@@ -22,6 +22,7 @@ originating_research_organizations: OSTI, ORNL
 software_title: Sample development and testing repository for DOECode
 acronym: dev-test-repo
 doi: 10.5072/23892
+license: GNU General Public License
 description: > 
   An example testing repository for submissions of YAML and other associated
   testing projects related to the development of DOECode.
