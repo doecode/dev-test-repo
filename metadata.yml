@@ -2,9 +2,7 @@
 #Version: 1.3
 
 ---
-repository_link: https://github.com/doecode/dev-test-repo
-access_limitations:
-- UNL
+repository_link: "https://github.com/doecode/dev-test-repo"
 developers:
 - affiliations: Oak Ridge National Laboratory
   first_name: Jay Jay
@@ -16,18 +14,19 @@ developers:
 - first_name: Neal
   last_name: Ensor
   email: ensorn@osti.gov
+  orcid: "0000-0001-5166-5705"
 - affiliations: Information International Associates (Contractor to DOE)
   first_name: Thomas
   last_name: Welsch
   email: welscht@osti.gov
 related_identifiers:
-- identifier_type: URL
-  identifier_value: http://github.com/doecode/doecode
-  relation_type: IsPreviousVersionOf
-  description: Newer code is present at this URL.
-- identifier_type: DOI
-  identifier_value: 10.5072/doecode2017/dev-test-repo/2
-  relation_type: Cites
+- identifier_type: "URL"
+  identifier_value: "http://github.com/doecode/doecode"
+  relation_type: "IsPreviousVersionOf"
+  description: "Newer code is present at this URL."
+- identifier_type: "DOI"
+  identifier_value: "10.5072/doecode2017/dev-test-repo/2"
+  relation_type: "Cites"
 contributors:
 - first_name: Bob
   last_name: McTester
@@ -38,40 +37,40 @@ contributing_organizations:
 - organization_name: University of Wisconsin
   contributor_type: DataCurator
 research_organizations:
-- organization_name: OSTI
+- organization_name: "OSTI"
   DOE: true 
-- organization_name: ORNL
+- organization_name: "ORNL"
   DOE: true
 sponsoring_organizations:
-- organization_name: DOE OSTI
+- organization_name: "DOE OSTI"
   DOE: true
+  primary_award: "DE-1999-23902"
   funding_identifiers:
-  - identifier_type: AwardNumber
-    identifier_value: DE_865234
-  - identifier_type: AwardNumber
-    identifier_value: DE-8293
-- organization_name: University of Miami, FL
+  - identifier_type: "AwardNumber"
+    identifier_value: "DE_865234"
+  - identifier_type: "AwardNumber"
+    identifier_value: "DE-8293"
+- organization_name: "University of Miami, FL"
   funding_identifiers:
-  - identifier_type: AwardNumber
-    identifier_value: UWIN-234
-  - identifier_type: AwardNumber
-    identifier_value: UWIN-888
-  - identifier_type: BRCode
-    identifier_value: UFL-11
-software_title: Sample development and testing repository for DOECode
-acronym: dev-test-repo
-doi: 10.5072/23892
-license: GNU General Public License
+  - identifier_type: "AwardNumber"
+    identifier_value: "UWIN-234"
+  - identifier_type: "AwardNumber"
+    identifier_value: "UWIN-888"
+  - identifier_type: "BRCode"
+    identifier_value: "UFL-11"
+software_title: "Sample development and testing repository for DOECode"
+acronym: "dev-test-repo"
+doi: "10.5072/23892"
+licenses:
+- "BSD 2-clause \"Simplified\" License"
 description: > 
   An example testing repository for submissions of YAML and other associated
   testing projects related to the development of DOECode.
 keywords: software, DOECode, hosting repositories
-disclaimers: open source
-recipient_name: Neal Ensor
-recipient_email: ensorn@osti.gov
-recipient_phone: 865-576-1295
-recipient_org: DOE OSTI
-site_accession_number: '384983'
-other_special_requirements: none
-related_software: linux, github, bitbucket
-release_date: 1999-06-02
+disclaimers: "open source"
+recipient_name: "Neal Ensor"
+recipient_email: "ensorn@osti.gov"
+recipient_phone: "865-576-1295"
+recipient_org: "DOE OSTI"
+site_accession_number: "384983"
+release_date: "1999-06-02"
