@@ -2,6 +2,7 @@
 #Version: 1.3
 
 ---
+accessibility: "OS"
 repository_link: "https://github.com/doecode/dev-test-repo"
 developers:
 - first_name: Jay Jay
