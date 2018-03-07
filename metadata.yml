@@ -4,21 +4,24 @@
 ---
 repository_link: "https://github.com/doecode/dev-test-repo"
 developers:
-- affiliations: Oak Ridge National Laboratory
-  first_name: Jay Jay
+- first_name: Jay Jay
   last_name: Billings
+  affiliations:
+  - "Oak Ridge National Laboratory"
 - email: knight.kathryn@gmail.com
-  affiliations: Oak Ridge National Laboratory
+  affiliations: 
+  - "Oak Ridge National Laboratory"
   first_name: Katie
   last_name: Knight
 - first_name: Neal
   last_name: Ensor
   email: ensorn@osti.gov
   orcid: "0000-0001-5166-5705"
-- affiliations: Information International Associates (Contractor to DOE)
-  first_name: Thomas
+- first_name: Thomas
   last_name: Welsch
   email: welscht@osti.gov
+  affiliations:
+  - "Information International Associates (IIa)"
 related_identifiers:
 - identifier_type: "URL"
   identifier_value: "http://github.com/doecode/doecode"
@@ -30,7 +33,8 @@ related_identifiers:
 contributors:
 - first_name: Bob
   last_name: McTester
-  affiliations: Java Testing Services, Inc.
+  affiliations: 
+  - "Java Testing Services, Inc."
   contributor_type: DataCurator
   email: mctester@testingservices.com
 contributing_organizations:
