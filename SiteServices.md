@@ -60,7 +60,7 @@ Content-Type: application/json
 Content-Length: 27
 Date: Mon, 14 Aug 2017 14:55:04 GMT
 ```
-```json array
+```json
 [{"site_code": "ABCD","email_domains": ["@abcd.gov"],"poc_emails": ["smith@abcd.gov","jones@abcd.gov"],"lab": "Alpha Bravo Charlie Delta"},{"site_code": "EFGH","email_domains": ["@efgh.gov"],"poc_emails": [],"lab": "Echo Foxtrot Golf Hotel"}]
 ```
 
