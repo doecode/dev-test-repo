@@ -244,6 +244,7 @@ Validation rules are:
 * software type is required:
   * "S" (Scientific)
   * "B" (Business), also requires at least one sponsoring organization
+* If project type is Closed Source, OSTI Hosted ("CO"), a file upload is required. *if submitting a file via the API, it will need to be provided as part of a multi-part form message*
 
 
 
@@ -293,7 +294,7 @@ be announced to DOE.  Workflow status remains *Submitted* for this operation. Ad
   * email must be valid
   * phone number must be valid
   * organization name is required
-* If project is not Open Source ("OS") availability, a file upload is required
+* If project type is not Open Source ("OS"), a file upload is required. *if submitting a file via the API, it will need to be provided as part of a multi-part form message*
 
 
 
