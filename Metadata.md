@@ -4,7 +4,7 @@ DOE CODE Metadata Services
 Introduction
 ------------
 
-Description of services provided by the API back end of DOE CODE.  The HTTP `GET` verb is used to retrieve information in various desired formats, and the `POST` verb used to send new and updated metadata information to the persistence back end.
+This is a description of services provided by the API back end of DOE CODE.  The HTTP `GET` verb is used to retrieve information in various desired formats, and the `POST` verb used to send new and updated metadata information to the persistence back end.
 
 > The API is available via `/doecodeapi/services/metadata` on the DOE CODE server.
 
