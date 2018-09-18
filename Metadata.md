@@ -168,13 +168,27 @@ be read for more complete repository information.
 Send JSON metadata to be persisted in the back-end.  This service persists the data in the *Saved* work-flow state. Returns metadata information in JSON format, if successful, with
 *code_id* value for reference.
 
+*When submitting a file or container via the API, it must be provided as a "file" or "container" multipart form parameter*
+
 > Request:
 > ```html
 > POST /doecodeapi/services/metadata/save
 > Content-Type: application/json
+> Authorization: Basic user-api-key
 > ```
 > ```json
 > { "software_title" : "Sample Data", ... }
+> ```
+> > Request with Upload:
+> ```html
+> POST /doecodeapi/services/metadata/save
+> Content-Type: multipart/form-data
+> Authorization: Basic user-api-key
+> ```
+> ```json
+> -F metadata={ "code_id":123, "software_title" : "Sample Data", ... }
+> -F file=@uploadedFile.tar
+> -F container=@uploadedContainer.tar
 > ```
 > Response:
 > ```html
@@ -216,7 +230,7 @@ this operation will be returned.
 > Authorization: Basic user-api-key
 > ```
 > ```json
-> -F metadata={ "software_title" : "Sample Data", ... }
+> -F metadata={ "code_id":123, "software_title" : "Sample Data", ... }
 > -F file=@uploadedFile.tar
 > -F container=@uploadedContainer.tar
 > ```
@@ -255,7 +269,7 @@ Validation rules are:
 * software type is required:
   * "S" (Scientific)
   * "B" (Business), also requires at least one sponsoring organization
-* If project type is Closed Source, OSTI Hosted ("CO"), a file upload is required. *When submitting a file via the API, it must be provided as a "file" multipart form data parameter*
+* If project type is Closed Source, OSTI Hosted ("CO"), a file upload is required. *When submitting a file or container via the API, it must be provided as a "file" or "container" multipart form parameter*
 
 
 
@@ -274,6 +288,17 @@ be announced to DOE.  Workflow status remains *Submitted* for this operation. Ad
 > ```
 > ```json
 > { "code_id":123, "software_title":"Sample Data", ... }
+> ```
+> > Request with Upload:
+> ```html
+> POST /doecodeapi/services/metadata/announce
+> Content-Type: multipart/form-data
+> Authorization: Basic user-api-key
+> ```
+> ```json
+> -F metadata={ "code_id":123, "software_title" : "Sample Data", ... }
+> -F file=@uploadedFile.tar
+> -F container=@uploadedContainer.tar
 > ```
 > Response:
 > ```html
@@ -305,7 +330,7 @@ be announced to DOE.  Workflow status remains *Submitted* for this operation. Ad
   * email must be valid
   * phone number must be valid
   * organization name is required
-* If project type is not Open Source ("OS"), a file upload is required. *When submitting a file via the API, it must be provided as a "file" multipart form data parameter*
+* If project type is not Open Source ("OS"), a file upload is required. *When submitting a file or container via the API, it must be provided as a "file" or "container" multipart form parameter*
 
 
 
