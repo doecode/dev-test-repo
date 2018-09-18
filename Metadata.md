@@ -4,9 +4,9 @@ DOE CODE Metadata Services
 Introduction
 ------------
 
-This is a description of services provided by the API back end of DOE CODE.  The HTTP `GET` verb is used to retrieve information in various desired formats, and the `POST` verb used to send new and updated metadata information to the persistence back end.
+Description of services provided by the API back end of DOE CODE.  The HTTP `GET` verb is used to retrieve information in various desired formats, and the `POST` verb used to send new and updated metadata information to the persistence back end.
 
-> The API is available via `/doecodeapi/services/metadata` on the DOE CODE server.
+> The API is available via `/doecodeapi/services/docs/metadata` on the DOE CODE server.
 
 [DOE CODE on GitHub >](https://github.com/doecode/doecode)
 
@@ -209,6 +209,17 @@ this operation will be returned.
 > ```json
 > { "code_id":123, "software_title":"Sample Data", ... }
 > ```
+> > Request with Upload:
+> ```html
+> POST /doecodeapi/services/metadata/submit
+> Content-Type: multipart/form-data
+> Authorization: Basic user-api-key
+> ```
+> ```json
+> -F metadata={ "software_title" : "Sample Data", ... }
+> -F file=@uploadedFile.tar
+> -F container=@uploadedContainer.tar
+> ```
 > Response:
 > ```html
 > HTTP/1.1 200 OK
@@ -341,7 +352,7 @@ A full JSON example is [provided below.](#json_example)
 | accessibility | This refers to how the source of the project type is accessed; must be one of "OS" (open source), "ON" (open source, not public), "CS" (closed source, site hosted), or "CO" (closed source, OSTI hosted) |
 | repository_link | If the software project is available via public hosting service, such as github.com, bitbucket.org, etc. the public repository URL should be provided here. |
 | landing_page | If the project is not available via open source hosting site, provide a URL describing the project and contact information for obtaining binary or source |
-| developers | An array of Objects, providing information about a project's developers or creators. Fields are [specified below.](#persons_fields) |
+| developers | An array of Objects, providing information about a project's developers or creators.  Array order determines display order.  Fields are [specified below.](#persons_fields) |
 | contributors | An array of information about project contributors. Fields are [specified below.](#persons_fields). Contributors must specify a [type of contribution](#contributor_types) made to the project. |
 | sponsoring_organizations | (Array) Information about the project sponsoring organizations, including any funding identifier information. Fields are [specified below.](#organization_fields) |
 | contributing_organizations | (Array) Information about any contributing organizations providing support for the software project. Fields are [specified below.](#organization_fields)  As with contributors, organizations must specify a [type of contribution](#contributor_types). |
@@ -351,7 +362,7 @@ A full JSON example is [provided below.](#json_example)
 | programming_languages | (Array) Any programming language used on the software project. |
 | version_number | The version of the software project. |
 | documentation_url | URL providing available documentation for the software project. |
-| licenses | Any software licenses or rights information about the software project, may have multiple values, such as the ones at the following <a href='/doecodeapi/services/types#doecode-types-api-valid-types-information-licenses'>endpoint</a>. |
+| licenses | Any software licenses or rights information about the software project, may have multiple values, such as the ones at the following <a href='/doecodeapi/services/docs/types#doecode-types-api-valid-types-information-licenses'>endpoint</a>. |
 | doi | A [Digital Object Identifier](http://doi.org/) assigned to this software project. |
 | acronym | A short descriptive acronym or abbreviation for this software project. |
 | date_of_issuance | The date the software project was made available or submitted. |
