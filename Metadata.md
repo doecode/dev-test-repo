@@ -369,7 +369,7 @@ code ID value of the Submitted record in order to approve access.  Approved reco
 
 
 <p id='metadata-services-approve-newprev'>
-New Text goes here.
+Upon approval, any DOI related identifiers of the type "IsNewVersionOf" or "IsPreviousVersionOf" will be matched, by DOI, to existing DOE CODE projects.  Those projects will automatically be associated with the Approved project via new Related Identifier information.
 </p>
 
 DOE CODE Metadata
