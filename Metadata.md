@@ -166,7 +166,7 @@ be read for more complete repository information.
 `POST /doecodeapi/services/metadata/save`
 
 Send JSON metadata to be persisted in the back-end.  This service persists the data in the *Saved* work-flow state. Returns metadata information in JSON format, if successful, with
-*code_id* value for reference.
+*code_id* value for reference.  *When submitting a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.*
 
 > Request:
 > ```html
@@ -204,8 +204,6 @@ Send JSON metadata to be persisted in the back-end.  This service persists the d
 > ```json
 > { "status" : 500, "errors" : ["Error saving record for \"Sample Data\": database failure." ] }
 > ```
-
-*When submitting a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.*
 
 ### submit
 
