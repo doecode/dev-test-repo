@@ -319,9 +319,8 @@ be announced to DOE.  Workflow status remains *Submitted* for this operation. Ad
 > { "status" : 400, "errors":[ "Title is required", "Developers are required", "Provided email address is invalid" ] }
 > ```
 
-<p id='metadata-services-announce'>&nbsp;</p>
+<p id='metadata-services-announce'>All above Submitted validations apply, plus:</p>
 
-* All above Submitted validations apply
 * A release date is required
 * At least one sponsoring organization is required
   * each organization must have a name
