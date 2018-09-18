@@ -275,7 +275,7 @@ Validation rules are:
   * "B" (Business), also requires at least one sponsoring organization
 * If project type is Closed Source, OSTI Hosted ("CO"), a file upload is required. *When uploading a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.*
 
-New Text goes here.
+
 
 ### announce
 
@@ -335,7 +335,7 @@ be announced to DOE.  Workflow status remains *Submitted* for this operation. Ad
   * organization name is required
 * If project type is not Open Source ("OS"), a file upload is required. *When uploading a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.*
 
-New Text goes here.
+
 
 ### approve
 
@@ -366,6 +366,11 @@ code ID value of the Submitted record in order to approve access.  Approved reco
 > ```json
 > { "status" : 400, "errors":[ "Metadata is not in the Submitted workflow state." ] }
 > ```
+
+
+<p id='metadata-services-approve-newprev'>
+New Text goes here.
+</p>
 
 DOE CODE Metadata
 ===============
