@@ -208,7 +208,7 @@ Send JSON metadata to be persisted in the back-end.  This service persists the d
 > ```
 
 <p id='metadata-save-upload-via-api'>
-*When uploading a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.*
+*When uploading a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.  File uploads should be a compressed file of type: .zip, .tar, .tar.gz, or .tar.bz2.  Container uploads should be Docker or Singularity image files of type: .tar, or .simg*
 </p>
 
 ### submit
