@@ -208,7 +208,7 @@ Send JSON metadata to be persisted in the back-end.  This service persists the d
 > ```
 
 <p id='metadata-save-upload-via-api'>
-*When uploading a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.  File uploads should be a compressed file of type: .zip, .tar, .tar.gz, or .tar.bz2.  Container uploads should be Docker or Singularity image files of type: .tar, or .simg*
+*When uploading a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.  File uploads should be a compressed file of type: .zip, .tar, .tgz, .tar.gz, or .tar.bz2.  Container uploads should be Docker or Singularity image files of type: .tar, or .simg*
 </p>
 
 ### submit
@@ -273,7 +273,7 @@ Validation rules are:
 * software type is required:
   * "S" (Scientific)
   * "B" (Business), also requires at least one sponsoring organization
-* If project type is Closed Source, OSTI Hosted ("CO"), a file upload is required. *When uploading a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.  File uploads should be a compressed file of type: .zip, .tar, .tar.gz, or .tar.bz2.  Container uploads should be Docker or Singularity image files of type: .tar, or .simg*
+* If project type is Closed Source, OSTI Hosted ("CO"), a file upload is required. *When uploading a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.  File uploads should be a compressed file of type: .zip, .tar, .tgz, .tar.gz, or .tar.bz2.  Container uploads should be Docker or Singularity image files of type: .tar, or .simg*
 
 
 
@@ -333,7 +333,7 @@ be announced to DOE.  Workflow status remains *Submitted* for this operation. Ad
   * email must be valid
   * phone number must be valid
   * organization name is required
-* If project type is not Open Source ("OS"), a file upload is required. *When uploading a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.  File uploads should be a compressed file of type: .zip, .tar, .tar.gz, or .tar.bz2.  Container uploads should be Docker or Singularity image files of type: .tar, or .simg*
+* If project type is not Open Source ("OS"), a file upload is required. *When uploading a file or container via the API, it must be provided as a "file" or "container" multipart form parameter.  File uploads should be a compressed file of type: .zip, .tar, .tgz, .tar.gz, or .tar.bz2.  Container uploads should be Docker or Singularity image files of type: .tar, or .simg*
 
 
 
@@ -375,7 +375,7 @@ Upon approval, any DOI related identifiers of the type "IsNewVersionOf" or "IsPr
 DOE CODE Metadata
 ===============
 A DOE CODE metadata Object is expressed as a JSON entity.  Each of the fields making up the entity are defined below, and an example record is provided in JSON format.
-A full JSON example is [provided below.](#json_example)
+A full JSON example is [provided below](#json_example).
 
 ## Metadata Field Information
 
@@ -383,16 +383,17 @@ A full JSON example is [provided below.](#json_example)
 | --- | --- |
 | code_id | The unique value given to a particular DOE CODE Project record once stored.  Should be *null* or not provided for new entries, and will be returned once a record is saved or submitted successfully. |
 | accessibility | This refers to how the source of the project type is accessed; must be one of "OS" (open source), "ON" (open source, not public), "CS" (closed source, site hosted), or "CO" (closed source, OSTI hosted) |
-| repository_link | If the software project is available via public hosting service, such as github.com, bitbucket.org, etc. the public repository URL should be provided here. |
+| repository_link | If the software project is available via public hosting service, such as github.com, bitbucket.org, etc. the public repository URL should be provided here.  DOE CODE does not currently support the submission of individual branch URL paths, so this must be a primary or base URL for the repository. |
 | landing_page | If the project is not available via open source hosting site, provide a URL describing the project and contact information for obtaining binary or source |
-| developers | An array of Objects, providing information about a project's developers or creators.  Array order determines display order.  Fields are [specified below.](#persons_fields) |
-| contributors | An array of information about project contributors. Fields are [specified below.](#persons_fields). Contributors must specify a [type of contribution](#contributor_types) made to the project. |
-| sponsoring_organizations | (Array) Information about the project sponsoring organizations, including any funding identifier information. Fields are [specified below.](#organization_fields) |
-| contributing_organizations | (Array) Information about any contributing organizations providing support for the software project. Fields are [specified below.](#organization_fields)  As with contributors, organizations must specify a [type of contribution](#contributor_types). |
-| research_organizations | (Array) Information about organizations providing research information for the project. Fields are [specified below.](#organization_fields) |
+| developers | An array of Objects, providing information about a project's developers or creators.  Array order determines display order.  Fields are [specified below](#persons_fields). |
+| contributors | An array of information about project contributors. Fields are [specified below](#persons_fields). Contributors must specify a [type of contribution](#contributor_types) made to the project. |
+| sponsoring_organizations | (Array) Information about the project sponsoring organizations, including any funding identifier information. Fields are [specified below](#organization_fields). |
+| contributing_organizations | (Array) Information about any contributing organizations providing support for the software project. Fields are [specified below](#organization_fields).  As with contributors, organizations must specify a [type of contribution](#contributor_types). |
+| research_organizations | (Array) Information about organizations providing research information for the project. Fields are [specified below](#organization_fields). |
 | related_identifiers | (Array) Any related links, such as DOIs to published works, additional versions, or documentation information relevant to the software project. |
 | description | An abstract about the software project. |
 | programming_languages | (Array) Any programming language used on the software project. |
+| keywords | Words or phrases that describe the project as summarized in the report/product. Keywords aide in the online search and discovery of information about the project. |
 | version_number | The version of the software project. |
 | documentation_url | URL providing available documentation for the software project. |
 | licenses | Any software licenses or rights information about the software project, may have multiple values, such as the ones at the following <a href='/doecodeapi/services/docs/types#doecode-types-api-valid-types-information-licenses'>endpoint</a>. |
