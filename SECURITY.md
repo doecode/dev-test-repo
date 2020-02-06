@@ -5,11 +5,13 @@
 ### Purpose
 
 This policy is intended to provide guidelines on submitting vulnerabilities  discovered on DOE CODE, an application hosted by the Department of Energy (DOE) Office of Scientific and Technical Information (OSTI). To read more about DOE OSTI’s security policies for all of DOE OSTI’s applications, read more: Security Doc from OSTI.GOV.
+
 If you believe you have found a vulnerability in DOE CODE, please reviewed the guidelines for submission by following the steps in the section detailing, “How to Submit a Report”.
 
 ### Scope
 
 This security disclosure document covers the web application for DOE CODE, an application hosted by the Department of Energy (DOE) Office of Scientific and Technical Information (OSTI) at https://www.osti.gov/doecode.   This policy does not include any user submitted code base hosted on DOE CODE. However, we will make our best effort to notify the owner of any repository we receive a vulnerability report for.
+
 To read more about DOE OSTI’s security policies for all of DOE OSTI’s applications, read more: [**Vulnerability Disclosure Policy**](https://www.osti.gov/.well-known/security.txt)
 
 ### Overview
@@ -60,9 +62,13 @@ After DOE OSTI has received a submitted report, OSTI will perform the following:
 ### End-User Compliance
 
 You, the end-user, must comply with all applicable Federal, State, and local laws in connection with your security research activities or other participation in this vulnerability disclosure program.
+
 DOE OSTI does not authorize, permit, or otherwise allow (expressly or impliedly) any person, including any individual, group of individuals, consortium, partnership, or any other business or legal entity to engage in any security research or vulnerability or threat disclosure activity that is inconsistent with this policy or the law. If you engage in any activities that are inconsistent with this policy or the law, you may be subject to criminal and/or civil liabilities.
+
 To the extent that any security research or vulnerability disclosure activity involves the networks, systems, information, applications, products, or services of a non-DOE entity (e.g., other Federal departments or agencies; State, local, or tribal governments; private sector companies or persons; employees or personnel of any such entities; or any other such third party), that non-DOE OSTI third party may independently determine whether to pursue legal action or remedies related to such activities.
+
 If you conduct your security research and vulnerability disclosure activities in accordance with the restrictions and guidelines set forth in this policy, (1) DOE OSTI will not initiate or recommend any law enforcement or civil lawsuits related to such activities, and (2) in the event of any law enforcement or civil action brought by anyone other than DOE OSTI, DOE OSTI will take steps to make known that your activities were conducted pursuant to and in compliance with this policy.
+
 DOE OSTI may modify the terms of this policy or terminate the policy at any time.
 
 ## About DOE CODE
@@ -74,9 +80,13 @@ DOE CODE is the U.S. Department of Energy’s (DOE) software services platform a
 ### DOE CODE Hosts Repositories
 
 When hosting other contributor’s code, it is imperative that the files are managed responsibly.  A hosting platform that takes no precautions while accepting untrusted files could end up unknowingly becoming the distribution platform for a virus. To reduce the risk of malicious files being uploaded we use a whitelist of the following file types: .zip, .tar, .tgz, .tar.gz, and .tar.bz2.  
+
 In general, it is good practice to isolate all the files from untrusted sources, e.g., unknown end-users, which will further mitigate the risk of hosting uploaded files in your project.  DOE OSTI’s DOE CODE application stores all uploaded archives outside of the root directory.  Hosting files in this manner helps to isolate any potential access to files malicious code could have.  
+
 Additionally, we reduce the uploads folder permissions to further reduce potential risk.
-Sercurity.md Contributors
+
+### Sercurity.md Contributors
+
 * Darel Finkbeiner
 * Alex Higginbotham
 * Rebel Powell
