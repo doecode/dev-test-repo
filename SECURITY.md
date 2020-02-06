@@ -4,7 +4,7 @@
 
 ### Purpose
 
-This policy is intended to provide guidelines on submitting vulnerabilities  discovered on DOE CODE, an application hosted by the Department of Energy (DOE) Office of Scientific and Technical Information (OSTI). To read more about DOE OSTI’s security policies for all of DOE OSTI’s applications, read more: Security Doc from OSTI.GOV.
+This policy is intended to provide guidelines on submitting vulnerabilities  discovered on DOE CODE, an application hosted by the Department of Energy (DOE) Office of Scientific and Technical Information (OSTI). To read more about DOE OSTI’s security policies for all of DOE OSTI’s applications, read more: [**Vulnerability Disclosure Policy**](https://www.osti.gov/.well-known/security.txt)
 
 If you believe you have found a vulnerability in DOE CODE, please reviewed the guidelines for submission by following the steps in the section detailing, “How to Submit a Report”.
 
