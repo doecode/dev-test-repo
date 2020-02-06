@@ -18,7 +18,7 @@ This security disclosure document covers the web application for DOE CODE, an ap
 
 The DOE OSTI security policy is to cause no harm to the open source ecosystem by improving code and supporting security best practices.
 
-If you discover potential vulnerabilities or security issues with DOE, please see the “How to Submit a Report” section of this policy. For bugs that impact visitor usability or application performance, please report them to OSTI directly by emailing doecode@osti.gov with as many details about the potential issue (and reproducing it) as you can provide. or by adding to DOE CODE’s Github project, https://github.com/doecode.   
+If you discover potential vulnerabilities or security issues with DOE CODE, please see the “How to Submit a Report” section of this policy. For bugs that impact visitor usability or application performance, please report them to OSTI directly by emailing doecode@osti.gov with as many details about the potential issue (and reproducing it) as you can provide, or by adding to DOE CODE’s Github project, https://github.com/doecode.   
 
 We recommend reporting security bugs and vulnerability bugs that you find to doecode@osti.gov and include the word “SECURITY” in the subject line.
 
@@ -32,7 +32,7 @@ The DOE CODE project maintainer will forward the report to the OSTI Security Tea
 
 DOE OSTI will deal in good faith with end-users who discover, test and submit vulnerabilities or indicators of vulnerabilities in accordance with these guidelines.
 
-You, the security researcher, are responsible for reporting security vulnerabilities to OSTI using the guidelines below. Please use OWASP’s guidelines for responsible reporting of security issues.
+You, the security researcher, are responsible for reporting security vulnerabilities to OSTI using the guidelines below. Please use <a href="https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html">OWASP</a>’s guidelines for responsible reporting of security issues.
 
 When a vulnerability is found, we ask the following:
 * Please notify DOE OSTI of the vulnerability via email, doecode@osti.gov and include the word “SECURITY” in the subject line.
@@ -75,11 +75,11 @@ DOE OSTI may modify the terms of this policy or terminate the policy at any time
 
 ### Joining the DOE CODE Repository
 
-DOE CODE is the U.S. Department of Energy’s (DOE) software services platform and search tool for collaboration, archiving, and discovery of scientific and business software funded by DOE. In order to join the DOE CODE GitHub community, please fill out the form located here.   
+DOE CODE is the U.S. Department of Energy’s (DOE) software services platform and search tool for collaboration, archiving, and discovery of scientific and business software funded by DOE. In order to join the DOE CODE GitHub community, please fill out the form located <a href="https://www.osti.gov/doecode/gitlab-signup">here</a>.
 
 ### DOE CODE Hosts Repositories
 
-When hosting other contributor’s code, it is imperative that the files are managed responsibly.  A hosting platform that takes no precautions while accepting untrusted files could end up unknowingly becoming the distribution platform for a virus. To reduce the risk of malicious files being uploaded we use a whitelist of the following file types: .zip, .tar, .tgz, .tar.gz, and .tar.bz2.  
+When hosting other contributor’s code, it is imperative that the files are managed responsibly.  A hosting platform that takes no precautions while accepting untrusted files could end up unknowingly becoming the distribution platform for a virus. To reduce the risk of malicious files being uploaded we use a whitelist of the following file types: <code>.zip</code>, <code>.tar</code>, <code>.tgz</code>, <code>.tar.gz</code>, and <code>.tar.bz2</code>.  
 
 In general, it is good practice to isolate all the files from untrusted sources, e.g., unknown end-users, which will further mitigate the risk of hosting uploaded files in your project.  DOE OSTI’s DOE CODE application stores all uploaded archives outside of the root directory.  Hosting files in this manner helps to isolate any potential access to files malicious code could have.  
 
