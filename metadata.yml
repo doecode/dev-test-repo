@@ -77,7 +77,7 @@ software_title: "Sample development and testing repository for DOECode"
 #abbreviated title or acronym for the software
 acronym: "dev-test-repo"
 #unique persistent identifier which references a digital object and provides long-term access
-doi: "10.5072/23892"
+doi: "https://doi.org/10.5072/test.doi.12345"
 #license for the software
 licenses:
 - "BSD 2-clause \"Simplified\" License"
