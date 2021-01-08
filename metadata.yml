@@ -96,3 +96,8 @@ recipient_org: "DOE OSTI"
 site_accession_number: "384983"
 #software release date
 release_date: "1999-06-02"
+award_dois:
+- funder_name: "blahblah5"
+  award_doi: "10.1234/test5"
+- funder_name: "another other award"
+  award_doi: "10.1234/lalala5"
